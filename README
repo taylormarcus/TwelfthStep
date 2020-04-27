@@ -32,6 +32,6 @@ Options:
   --help  Show this message and exit.
 
 Commands:
-  read
-  select
+  read    Lists all topics in the database
+  select  Selects a number of topics equal to [COUNT]
 ---
