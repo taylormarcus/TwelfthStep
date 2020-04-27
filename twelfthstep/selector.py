@@ -11,6 +11,7 @@ def main():
 
 @main.command()
 def read():
+    """ Lists all topics in the database """
     dbx = connect
     topic_inv_count = dbx("SELECT COUNT(*) FROM Topics")
     topic_inv_count = topic_inv_count.rows[0][0]
@@ -26,6 +27,7 @@ def read():
 @main.command()
 @click.argument("count", type=int, nargs=1)
 def select(count):
+    """ Selects a number of topics equal to [COUNT] """
     dbx = connect
     topic_inv_count = dbx("SELECT COUNT(*) FROM Topics")
     topic_inv_count = topic_inv_count.rows[0][0]
