@@ -1,0 +1,37 @@
+REQUIREMENTS:
+
+    * click
+    * tabulate
+
+
+USAGE:
+
+The setup script creates two entry points.
+
+ts-editor: Used to edit topics from the command line.
+ts-selector: Used to select topics or read a list of topics.
+
+---
+Usage: ts-editor [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  create              Creates a new topic [TOPIC] [DESCRIPTION]
+  delete              Deletes a topic by [TID]
+  update              Updates a topic [TID] [TOPIC] [DESCRIPTION]
+  update-description  Updates a topic [TID] [DESCRIPTION]
+  update-topic        Updates a topic [TID] [TOPIC]
+---
+
+---
+Usage: ts-selector [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  read
+  select
+---
